@@ -1,0 +1,93 @@
+*,
+*::after,
+*::before {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    position: relative;
+    background-color: #a28089;
+}
+h1 {
+    text-align: center;
+    margin-top: 20px;
+    color: aliceblue;
+    font-size: 50px;
+    /* font-family: "Cookie", cursive; */
+    font-family: "Courgette", cursive;
+    color: #51e2f5;
+}
+form {
+    position: fixed;
+    /* margin-top: 2rem; */
+    top: 80vh;
+    right: 30%;
+    left: 30%;
+    border-radius: 8px;
+    border: 2px solid #d2042d;
+    color: #000;
+    box-shadow: 0 2px 4px 4px rgba(0, 0, 0, 0.5);
+}
+
+ul {
+    padding-left: 0;
+}
+
+.items {
+    top: 50px;
+    right: 30%;
+    left: 30%;
+    border-radius: 8px;
+}
+
+.form-group {
+    margin-bottom: 0;
+}
+
+.completedTodo {
+    background-color: darkgray;
+    text-decoration: line-through;
+}
+
+.list-group-item {
+    background-color: #e3e1c6;
+    margin-left: 25%;
+    margin-right: 25%;
+    margin-top: 2px;
+}
+
+.completeHover:hover {
+    color: green;
+    transform: scale(1.5);
+}
+
+.addHover:hover {
+    background-color: green;
+}
+
+@media screen and (max-width: 800px) {
+    .list-group-item {
+        margin-left: 15%;
+        margin-right: 15%;
+    }
+
+    form {
+        left: 20%;
+        width: 60%;
+        right: 20%;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    .list-group-item {
+        margin-left: 5%;
+        margin-right: 10%;
+    }
+    form {
+        left: 20%;
+        width: 60%;
+        right: 20%;
+    }
+}
